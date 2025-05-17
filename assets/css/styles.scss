@@ -1,0 +1,15 @@
+@import url(reset.css);
+
+$font-stack: open sans, sans-serif;
+$header-color: #2cd1c7;
+$bg-color: #111029;
+
+body {
+    background-color: $bg-color;
+}
+
+h1 {
+    font-family: $font-stack;
+    color: $header-color;
+    
+}

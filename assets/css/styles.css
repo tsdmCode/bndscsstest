@@ -1,38 +1,11 @@
-/* #region globals, variables and imports */
-@import 'reset.css';
-
-/* #endregion  */
-
-/* #region nav */
-
-/* #endregion  */
-
-/* #section one  */
-
-/* #endregion  */
-
-/* #section two */
-
-/* #endregion  */
-
-/* #section three  */
-
-/* #endregion  */
-
-/* #region queries  */
-
-/* #region screen  */
-
-@media screen and (min-width: 1300px) {
+@import url(reset.css);
+body {
+  background-color: #111029;
 }
 
-/* #endregion  */
-
-/* #region tablet  */
-
-@media screen and (min-width: 769px) and (max-width: 1299px) {
+h1 {
+  font-family: open sans, sans-serif;
+  color: #2cd1c7;
 }
 
-/* #endregion  */
-
-/* #endregion  */
+/*# sourceMappingURL=styles.css.map */
