@@ -11,5 +11,29 @@ body {
 h1 {
     font-family: $font-stack;
     color: $header-color;
+    font-size: 67px;
+    text-align: center;
+}
+
+nav, header, main {
+    margin: 0rem 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 3rem;
+    margin: 0 2rem;
+    font-size: 22px;
     
+    ul {
+        align-content: center;
+        color: white;
+    }
+    
+    a {
+        font-family: $font-stack;
+        text-decoration: none;
+        color: white;
+    }
 }
