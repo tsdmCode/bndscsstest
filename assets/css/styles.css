@@ -1,17 +1,32 @@
 @import url(reset.css);
 body {
   background-color: #111029;
+  font-family: open sans, sans-serif;
 }
 
 h1 {
-  font-family: open sans, sans-serif;
   color: #2cd1c7;
   font-size: 67px;
   text-align: center;
+  margin: 2rem 0;
+}
+
+h3 {
+  color: #2cd1c7;
+  font-size: 18px;
+}
+
+p {
+  color: #ffffff;
+  font-size: 16px;
 }
 
 nav, header, main {
   margin: 0rem 2rem;
+}
+
+header img {
+  width: 100%;
 }
 
 nav {
@@ -29,6 +44,82 @@ nav a {
   font-family: open sans, sans-serif;
   text-decoration: none;
   color: white;
+}
+
+section {
+  display: grid;
+}
+section button {
+  background-color: transparent;
+  border: 0px transparent;
+  color: #2cd1c7;
+  font-size: 16px;
+}
+section footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem;
+}
+section p {
+  margin-bottom: 1rem;
+}
+section figure {
+  width: 100%;
+}
+section img {
+  width: 100%;
+}
+section h3 {
+  margin: 0.5rem 0 1rem 0;
+}
+
+#grid-one {
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  gap: 1rem;
+  margin: 4rem 0rem;
+}
+
+.divider {
+  display: flex;
+  justify-content: center;
+}
+.divider img {
+  width: 25%;
+}
+
+#grid-two {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+#grid-two h3 {
+  color: #ffffff;
+}
+
+#global-footer {
+  margin-top: 4rem;
+  background-color: #1e1c47;
+  padding-bottom: 2rem;
+}
+#global-footer h2 {
+  font-size: 29px;
+  color: #2cd1c7;
+}
+#global-footer figure {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 2rem 2rem;
+}
+#global-footer form {
+  display: flex;
+  flex-direction: column;
+}
+#global-footer input {
+  background-color: inherit;
+  border: 1px solid gray;
+}
+#global-footer input[type=submit] {
+  border: 1px solid #2cd1c7;
 }
 
 /*# sourceMappingURL=styles.css.map */

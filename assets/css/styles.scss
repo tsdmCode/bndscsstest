@@ -3,20 +3,41 @@
 $font-stack: open sans, sans-serif;
 $header-color: #2cd1c7;
 $bg-color: #111029;
+$footer-color: #1e1c47;
+$text-color: #ffffff;
 
 body {
     background-color: $bg-color;
+    font-family: $font-stack;
 }
 
 h1 {
-    font-family: $font-stack;
     color: $header-color;
     font-size: 67px;
     text-align: center;
+    margin: 2rem 0;
+}
+
+h3 {
+    color: $header-color;
+    font-size: 18px;
+
+}
+
+p {
+    color: $text-color;
+    font-size: 16px;
 }
 
 nav, header, main {
     margin: 0rem 2rem;
+    
+}
+
+header {
+    img {
+        width: 100%;
+    }
 }
 
 nav {
@@ -35,5 +56,91 @@ nav {
         font-family: $font-stack;
         text-decoration: none;
         color: white;
+    }
+}
+
+section {
+    display: grid;
+
+    button {
+        background-color: transparent;
+        border: 0px transparent;
+        color: $header-color;
+        font-size: 16px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0.5rem;
+    }
+
+    p {
+        margin-bottom: 1rem;
+    }
+    figure {
+        width: 100%;
+    }
+    img {
+        width: 100%;
+    }
+    h3 {
+        margin: 0.5rem 0 1rem 0;
+    }
+}
+
+#grid-one {
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    gap: 1rem;
+    margin: 4rem 0rem;
+
+
+
+
+    
+}
+
+.divider {
+    display: flex;
+    justify-content: center;
+
+    img {
+        width: 25%;
+    }
+}
+
+#grid-two {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    
+    h3 {
+        color: #ffffff;
+    }
+}
+
+#global-footer {
+    margin-top: 4rem;
+    background-color: $footer-color;
+    padding-bottom: 2rem;
+    h2 {
+        font-size: 29px;
+        color: $header-color;
+    }
+    figure {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 2rem 2rem;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    input {
+        background-color: inherit;
+        border: 1px solid gray;
+    }
+    input[type="submit"] {
+        border: 1px solid $header-color;
     }
 }
