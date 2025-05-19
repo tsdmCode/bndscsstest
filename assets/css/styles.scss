@@ -6,6 +6,10 @@ $bg-color: #111029;
 $footer-color: #1e1c47;
 $text-color: #ffffff;
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: $bg-color;
     font-family: $font-stack;
@@ -30,7 +34,7 @@ p {
 }
 
 nav, header, main {
-    margin: 0rem 2rem;
+    margin: 0rem 4rem;
     
 }
 
@@ -44,7 +48,7 @@ nav {
     display: flex;
     justify-content: space-between;
     height: 3rem;
-    margin: 0 2rem;
+    // margin: 0 2rem;
     font-size: 22px;
     
     ul {
@@ -95,10 +99,6 @@ section {
     gap: 1rem;
     margin: 4rem 0rem;
 
-
-
-
-    
 }
 
 .divider {
@@ -123,6 +123,7 @@ section {
     margin-top: 4rem;
     background-color: $footer-color;
     padding-bottom: 2rem;
+
     h2 {
         font-size: 29px;
         color: $header-color;
@@ -130,17 +131,43 @@ section {
     figure {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin: 2rem 2rem;
+        margin: 2rem 4rem;
     }
     form {
         display: flex;
         flex-direction: column;
+        gap: 0.5rem;
+        width: 90%;
     }
+
     input {
         background-color: inherit;
-        border: 1px solid gray;
+        border: 3px solid gray;
+        color: #ffffff;
+        padding: 1rem 0.5rem;
+        font-size: 25px;
     }
+    input:focus {
+        outline: none;
+    }
+    input::placeholder {
+        color: inherit;
+        font-size: 25px;
+        font-weight: 200;
+    }
+
     input[type="submit"] {
-        border: 1px solid $header-color;
+        border: 3px solid $header-color;
+        font-size: 25px;
+        width: 50%;
+    }
+
+    input[type="submit"]:hover {
+        background-color: $header-color;
+        border: 3px solid $footer-color;
+    }
+
+    label {
+        color: $text-color;
     }
 }

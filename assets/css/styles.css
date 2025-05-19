@@ -1,4 +1,8 @@
 @import url(reset.css);
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #111029;
   font-family: open sans, sans-serif;
@@ -22,7 +26,7 @@ p {
 }
 
 nav, header, main {
-  margin: 0rem 2rem;
+  margin: 0rem 4rem;
 }
 
 header img {
@@ -33,7 +37,6 @@ nav {
   display: flex;
   justify-content: space-between;
   height: 3rem;
-  margin: 0 2rem;
   font-size: 22px;
 }
 nav ul {
@@ -108,18 +111,40 @@ section h3 {
 #global-footer figure {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 2rem 2rem;
+  margin: 2rem 4rem;
 }
 #global-footer form {
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
+  width: 90%;
 }
 #global-footer input {
   background-color: inherit;
-  border: 1px solid gray;
+  border: 3px solid gray;
+  color: #ffffff;
+  padding: 1rem 0.5rem;
+  font-size: 25px;
+}
+#global-footer input:focus {
+  outline: none;
+}
+#global-footer input::placeholder {
+  color: inherit;
+  font-size: 25px;
+  font-weight: 200;
 }
 #global-footer input[type=submit] {
-  border: 1px solid #2cd1c7;
+  border: 3px solid #2cd1c7;
+  font-size: 25px;
+  width: 50%;
+}
+#global-footer input[type=submit]:hover {
+  background-color: #2cd1c7;
+  border: 3px solid #1e1c47;
+}
+#global-footer label {
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=styles.css.map */
